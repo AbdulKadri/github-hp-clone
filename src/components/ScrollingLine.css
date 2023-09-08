@@ -1,0 +1,7 @@
+.scrolling-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  transition: height 0.3s ease, background-color 0.3s ease;
+}

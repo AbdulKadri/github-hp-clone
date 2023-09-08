@@ -1,0 +1,85 @@
+.navbar {
+  /* background-color: #24292e; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  gap: 2rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-item.has-submenu::after {
+  content: "▼";
+  font-size: 0.5rem;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #24292e;
+  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.navbar-item.has-submenu:hover .submenu {
+  display: block;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.search-container input {
+  background-color: #3f4448;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.navbar-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-button.sign-in {
+  background-color: transparent;
+}
+
+.navbar-button.sign-up {
+  background-color: transparent;
+  border: 1px solid white;
+}

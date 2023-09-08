@@ -1,0 +1,51 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #24292e;
+  color: #586069;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  gap: 1rem;
+}
+
+.footer-left a,
+.footer-right .fa-icon {
+  margin-left: 1rem;
+  color: #586069;
+  text-decoration: none;
+}
+
+a {
+  color: #586069;
+  text-decoration: none;
+}
